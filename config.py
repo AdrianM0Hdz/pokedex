@@ -13,7 +13,7 @@ basedir = os.path.abspath(os.path.dirname(__name__))
 
 class Config: 
     SECRET_KEY = os.environ.get('SECRET_KEY') or 'secret key string'
-    SQLALCHEMY_TRACK_MODIFICATION = False
+    SQLALCHEMY_TRACK_MODIFICATIONS = False
 
     @staticmethod
     def init_app(app):
