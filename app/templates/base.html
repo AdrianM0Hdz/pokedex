@@ -12,5 +12,8 @@
 <body>
     {% block body %} 
     {% endblock %}
+    {% block scripts %}
+    <script type="module" src="{{ url_for('static', filename='js/main.js') }}"></script>
+    {% endblock %}
 </body>
 </html>

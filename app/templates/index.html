@@ -7,5 +7,12 @@
 {% endblock %}
 
 {% block body %}
-<h1>Hello everyone</h1>
+<h1>Pokedex</h1>
+<label for="pokemon-name">Enter the name of a pokemon</label><br>
+<input id="pokemon-name" type="text">
+<button id="submit">Search</button>
+{% endblock %}
+
+{% block scripts %}
+    {{ super() }}
 {% endblock %}
