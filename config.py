@@ -3,8 +3,8 @@ author: Adrian Hernandez
 email: adrian.hernandez.p0@gmail.com
 encoding: utf-8
 description: This file contains classes that represent the different configurations
-    depeding on the mode of running the project. they are all packed in the config dictionary
-    in order to be accesed by name. 
+depeding on the mode of running the project. they are all packed in the config dictionary
+in order to be accesed by name. 
 """
 
 import os 
