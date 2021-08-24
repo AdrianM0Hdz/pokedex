@@ -8,13 +8,13 @@
 
 {% block body %}
 <h1>Pokedex</h1>
-<label for="pokemon-name">Enter the name of a pokemon</label><br>
-<input id="pokemon-name" type="text">
-<button id="submit">Search</button>
+<form id="search-query">
+    <label for="pokemon-name">Enter the name of a pokemon</label><br>
+    <input id="pokemon-name" type="text">
+    <input type="submit" value="SUBMIT">
+</form>
 <br>
 <div id="pokemon">
-    <p id="name"></p>
-    <img src="" alter="a pokemon">
 </div>
 {% endblock %}
 

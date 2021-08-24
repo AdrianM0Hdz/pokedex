@@ -12,6 +12,7 @@ import os
 basedir = os.path.abspath(os.path.dirname(__name__))
 
 class Config: 
+    FLASK_APP = 'pokedex.py'
     SECRET_KEY = os.environ.get('SECRET_KEY') or 'secret key string'
     SQLALCHEMY_TRACK_MODIFICATIONS = False
 

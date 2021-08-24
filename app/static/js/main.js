@@ -1,12 +1,13 @@
 import getPokemon from './utils/getPokemon.js';
 import renderPokemon from './utils/renderPokemon.js';
 
-const textBox = document.querySelector('#pokemon-name');
-textBox.value = '';
-const button = document.querySelector('#submit');
-button.addEventListener('click', async (event) => {
-    let pokemonName = textBox.value;
-    const pokemon = await getPokemon(pokemonName);
-    await renderPokemon(pokemon);
-    textBox.value = '';
+const searchForm = document.querySelector('#search-query');
+const input = document.querySelector('#pokemon-name');
+
+searchForm.addEventListener('submit', async (event) => {
+    event.preventDefault();
+    let pokemonName = input.value;
+    const pokemonData = await getPokemon(pokemonName);
+    renderPokemon(pokemonData);
+    input.value = '';
 });
